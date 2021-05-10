@@ -13,7 +13,7 @@ Legal documents are very complicated. Luckily, the Harvard Law School provides a
 Here is a short video from Harvard law School announcing the Caselaw Access Project at case.law.
 [![Caselaw Access](http://img.youtube.com/vi/kwlN_vhai84/0.jpg)](http://www.youtube.com/watch?v=kwlN_vhai84 "CAP")
 
-The first step is to access all ICWA caselaw data which is available through the Harvard API here https://api.case.law/v1/cases/?page_size=896&search=%22ICWA%22. The data includes an ID, case name, decision date, docket number, parties, jurisdiction, cases cited and full text, among other things. The graphic below is a snapshot of the results from the link above. Notice that there are 899 cases available for download.
+The first step is to access all ICWA caselaw data which is available through the [Harvard CAP API] (https://api.case.law/v1/cases/?page_size=896&search=%22ICWA%22). The data includes an ID, case name, decision date, docket number, parties, jurisdiction, cases cited and full text, among other things. The graphic below is a snapshot of the results from the link above. Notice that there are 899 cases available for download.
 
 ![image](images/icwa_cases.png)
 
@@ -42,7 +42,7 @@ ggplot(df, aes(x = reorder(name_long, -counts), y = counts)) +
 ```
 ![image](images/caselaw_by_state.png)
 
-In order to get the full text we need to set the option ‘full_case = true.’ For example, the url to access the full case text for case number 1597254 is https://api.case.law/v1/cases/1597254/?full_case=true
+In order to get the full text we need to set the option ‘full_case = true.’ For example, [click here](https://api.case.law/v1/cases/1597254/?full_case=true) to access the URL for the full case text for case number 159725, _State ex rel. Human Services Department v. Wayne R.N._
 
 ![image](images/full_case.png)
 
