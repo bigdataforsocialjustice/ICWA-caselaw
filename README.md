@@ -8,6 +8,11 @@ Here, we describe the first step of our analysis, namely to identify and downloa
 
 The Harvard Law School provides a way to access ICWA caselaw data fairly easily. The Harvard Law School's Caselaw Access Project can be accessed here https://case.law. The R script will download all available ICWA cases into an R data frame object for further analysis.
 
+Legal documents are very complicated. Luckily, the Harvard Law School provides a way to access caselaw data fairly easily. The data for this analysis comes from Harvard Law School's Caselaw Access Project which can be accessed here https://case.law. The Caselaw Access Project ("CAP") expands public access to U.S. law by providing a searchable database and an Application Programming Interface (”API”). The goal of this project is to make all published U.S. court decisions freely available to the public online, in a consistent format, digitized from the collection of the Harvard Law Library.
+
+The first step is to access all ICWA caselaw data which is available through the Harvard API here https://api.case.law/v1/cases/?page_size=896&search=%22ICWA%22. The data includes an ID, case name, decision date, docket number, parties, jurisdiction, cases cited and full text, among other things. The graphic below is a snapshot of the results from the link above. Notice that there are 899 cases available for download.
+
+
 **References**
 
 Fletcher, Mathew (2007). "ICWA and the Commerce Clause" Availabe at: https://www.law.msu.edu/indigenous/papers/2007-06.pdf
